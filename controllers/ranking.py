@@ -27,7 +27,6 @@ def ranking(request):
     data = list()
     jd = request.form.get('jobDescription')
     summarize_description = summarize(jd,ratio=1)
-    print("description",summarize_description)
 
     for file in files:
         extractedText = extract_text_from_pdf(file)
