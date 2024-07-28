@@ -29,3 +29,8 @@ def classify_route():
 @app.route('/rank',methods=['POST'])
 def rank_route():
     return ranking(request)
+
+
+
+if __name__ == '__main__':
+    app.run(port=5500)
